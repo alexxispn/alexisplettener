@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/",
+  website: "https://alexisplettener.netlify.app/",
   author: "Alexis Plettener",
   desc: "Join me on my journey as I share my learnings and insights on software development.",
   title: "WinviPaper",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "alexis-linkedin.png",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
