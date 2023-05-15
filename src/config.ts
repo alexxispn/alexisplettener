@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://alexisplettener.netlify.app/",
   author: "Alexis Plettener",
   desc: "Join me on my journey as I share my learnings and insights on software development.",
-  title: "WinviPaper",
+  title: "winviblog",
   ogImage: "alexis-linkedin.png",
   lightAndDarkMode: true,
   postPerPage: 3,
