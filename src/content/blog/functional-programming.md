@@ -206,17 +206,28 @@ const getHighScore = () => {
 
 <details>
 <summary>Solution</summary>
-- The first function (`add1`) is a pure function because it always returns the same output for the same input and has no side effects.
-- The second function (`add2`) is a pure function because it always returns the same output for the same input and has no side effects.
-- The third function (`add3`) is an impure function because it has a side effect of logging to the console.
-- The `generateRandomNumber` function is a non-pure function because it produces different outputs each time it is called.
-- The `checkGuess` function is a pure function because it compares the `guess` with the `secretNumber` and returns a boolean without any side effects.
-- The `displayMessage` function is a non-pure function because it involves a side effect of interacting with the user interface by displaying a message.
-- The `updateScore` function is a pure function because it takes the current `score` and `points` earned from the guess and returns the updated score without modifying external state or having side effects.
-- The `saveScore` function is a non-pure function because it involves a side effect of saving the score to an external storage.
-- The `resetGame` function is a non-pure function because it involves modifying the external state by resetting the game.
-- The `generateHint` function is a pure function because it generates a hint for the `secretNumber` and returns it without modifying external state or having side effects.
-- The `getHighScore` function is a non-pure function because it involves a side effect of retrieving the high score from an external storage.
+
+* The first function (`add1`) is a pure function because it always returns the same output for the same input and 
+has no side effects.
+* The second function (`add2`) is a pure function because it always returns the same output for the same input and 
+has no side effects.
+* The third function (`add3`) is an impure function because it has a side effect of logging to the console.
+* The `generateRandomNumber` function is a non-pure function because it produces different outputs each time it is 
+called.
+* The `checkGuess` function is a pure function because it compares the `guess` with the `secretNumber` and returns a 
+boolean without any side effects.
+* The `displayMessage` function is a non-pure function because it involves a side effect of interacting with the 
+user interface by displaying a message.
+* The `updateScore` function is a pure function because it takes the current `score` and `points` earned from the 
+guess and returns the updated score without modifying external state or having side effects.
+* The `saveScore` function is a non-pure function because it involves a side effect of saving the score to an 
+external storage.
+* The `resetGame` function is a non-pure function because it involves modifying the external state by resetting the 
+game.
+* The `generateHint` function is a pure function because it generates a hint for the `secretNumber` and returns it 
+without modifying external state or having side effects.
+* The `getHighScore` function is a non-pure function because it involves a side effect of retrieving the high score 
+from an external storage.
 </details>
 
 
