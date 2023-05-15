@@ -21,10 +21,10 @@ description: I've been exploring functional programming recently and wanted to s
 ## Table of Contents
 
 - [What is Functional Programming?](#what-is-functional-programming)
+- [Functional Programming Principles](#functional-programming-principles)
 - [Pros of Functional Programming](#pros-of-functional-programming)
 - [Cons of Functional Programming](#cons-of-functional-programming)
 - [Why is Functional Programming useful to know?](#why-is-functional-programming-useful-to-know)
-- [Functional Programming Principles](#functional-programming-principles)
 - [I need to do some side effects, what do I do?](#i-need-to-do-some-side-effects-what-do-i-do)
 - [Can you guess which of these functions are pure?](#can-you-guess-which-of-these-functions-are-pure)
 
@@ -33,65 +33,6 @@ description: I've been exploring functional programming recently and wanted to s
 Functional programming is a programming paradigm that revolves around the concept of composing pure functions. Pure
 functions are functions that always produce the same output given the same input and have no side effects. In functional
 programming, we emphasize immutability, higher-order functions, and a declarative programming style.
-
-## Pros of Functional Programming
-
-Functional programming offers several benefits:
-
-- **Readability and Maintainability**: Functional code tends to be concise, modular, and easy to understand. Pure
-  functions are isolated and reusable, making it easier to reason about their behavior and test them.
-- **Predictability**: Pure functions guarantee deterministic behavior, producing the same output for the same input.
-  This predictability simplifies debugging and enhances code comprehension.
-- **Scalability**: Functional programming promotes the use of immutable data structures and avoids shared mutable state.
-  This reduces the potential for bugs and facilitates parallelization and distribution of code.
-- **Composition and Reusability**: Functions in functional programming are designed to be composable, allowing you to
-  build complex programs by combining simpler functions. This leads to code reuse and modularity.
-- **Testability**: Pure functions are easy to test because they are isolated and have no side effects. This makes it
-  easier to write unit tests for functional code.
-
-## Cons of Functional Programming
-
-Functional programming also has some drawbacks:
-
-- **Learning Curve**: Functional programming introduces new concepts and ways of thinking, which can be challenging for
-  developers transitioning from imperative or object-oriented programming.
-- **Performance**: Functional programming tends to be slower than imperative programming because of the overhead
-  associated with higher-order functions and recursion.
-- **Memory Usage**: Functional programming tends to use more memory than imperative programming because of the
-  proliferation of immutable data structures.
-- **Lack of Support**: Functional programming is not supported by all programming languages, and some languages that
-  claim to support functional programming do not support it fully.
-
-## Why is Functional Programming useful to know?
-
-Learning functional programming, even if you don't use it extensively in your projects, can still be incredibly useful
-for several reasons:
-
-- **Expanded Problem-Solving Skills**: Functional programming introduces you to new ways of thinking about and
-  approaching problems. It encourages a different mindset, emphasizing immutability, pure functions, and composition.
-  These concepts can enhance your problem-solving skills and broaden your perspective on programming challenges.
-- **Improved Code Quality**: Functional programming principles, such as immutability and pure functions, promote code
-  that is easier to reason about, test, and maintain. Even if you don't adopt functional programming entirely,
-  incorporating some of its concepts into your codebase can lead to cleaner, more reliable, and less error-prone code.
-- **Better Collaboration**: Functional programming has a strong emphasis on modularity and code reusability. Learning
-  functional programming concepts allows you to understand and work more effectively with codebases that have functional
-  aspects. It also enables you to collaborate more seamlessly with developers who use functional programming languages
-  or paradigms.
-- **Enhanced Problem Decomposition**: Functional programming encourages breaking down problems into smaller, composable
-  functions. This approach helps in breaking complex tasks into simpler, more manageable units. Even if you don't use
-  functional programming extensively, you can apply this decomposition technique to improve the organization and
-  readability of your code.
-- **Understanding Existing Codebases**: Many libraries, frameworks, and open-source projects incorporate functional
-  programming concepts. By learning functional programming, you'll be better equipped to understand and work with these
-  codebases, making it easier to leverage their functionality or contribute to the projects.
-- **Preparation for Future Technologies**: Functional programming is gaining popularity across various programming
-  languages and ecosystems. By learning its principles, you'll be better prepared for future developments in the
-  programming landscape. Additionally, as multi-core and parallel processing become more prevalent, functional
-  programming's emphasis on immutability and lack of shared state makes it a suitable paradigm for writing concurrent
-  and distributed systems.
-- **Cognitive Flexibility**: Learning functional programming broadens your programming toolkit and enhances your ability
-  to approach problems from different angles. It develops your cognitive flexibility, enabling you to choose the most
-  appropriate paradigm for a given problem and adapt your coding style to different programming contexts.
 
 ## Functional Programming Principles
 
@@ -132,6 +73,63 @@ key functional programming principles:
 - **Type Systems**: Type systems are a set of rules that assign a type to every expression in a program. Type systems
   are useful because they enable you to catch errors at compile time rather than at runtime. They also facilitate
   refactoring and code maintenance by providing a formal specification of the program's behavior.
+
+## Pros of Functional Programming
+
+Functional programming offers several benefits:
+
+- **Readability and Maintainability**: Functional code tends to be concise, modular, and easy to understand. Pure
+  functions are isolated and reusable, making it easier to reason about their behavior and test them.
+- **Predictability**: Pure functions guarantee deterministic behavior, producing the same output for the same input.
+  This predictability simplifies debugging and enhances code comprehension.
+- **Scalability**: Functional programming promotes the use of immutable data structures and avoids shared mutable state.
+  This reduces the potential for bugs and facilitates parallelization and distribution of code.
+- **Composition and Reusability**: Functions in functional programming are designed to be composable, allowing you to
+  build complex programs by combining simpler functions. This leads to code reuse and modularity.
+- **Testability**: Pure functions are easy to test because they are isolated and have no side effects. This makes it
+  easier to write unit tests for functional code.
+
+## Cons of Functional Programming
+
+Functional programming also has some drawbacks:
+
+- **Learning Curve**: Functional programming introduces new concepts and ways of thinking, which can be challenging for
+  developers transitioning from imperative or object-oriented programming.
+- **Performance**: Functional programming tends to be slower than imperative programming because of the overhead
+  associated with higher-order functions and recursion.
+- **Memory Usage**: Functional programming tends to use more memory than imperative programming because of the
+  proliferation of immutable data structures.
+
+## Why is Functional Programming useful to know?
+
+Learning functional programming, even if you don't use it extensively in your projects, can still be incredibly useful
+for several reasons:
+
+- **Expanded Problem-Solving Skills**: Functional programming introduces you to new ways of thinking about and
+  approaching problems. It encourages a different mindset, emphasizing immutability, pure functions, and composition.
+  These concepts can enhance your problem-solving skills and broaden your perspective on programming challenges.
+- **Improved Code Quality**: Functional programming principles, such as immutability and pure functions, promote code
+  that is easier to reason about, test, and maintain. Even if you don't adopt functional programming entirely,
+  incorporating some of its concepts into your codebase can lead to cleaner, more reliable, and less error-prone code.
+- **Better Collaboration**: Functional programming has a strong emphasis on modularity and code reusability. Learning
+  functional programming concepts allows you to understand and work more effectively with codebases that have functional
+  aspects. It also enables you to collaborate more seamlessly with developers who use functional programming languages
+  or paradigms.
+- **Enhanced Problem Decomposition**: Functional programming encourages breaking down problems into smaller, composable
+  functions. This approach helps in breaking complex tasks into simpler, more manageable units. Even if you don't use
+  functional programming extensively, you can apply this decomposition technique to improve the organization and
+  readability of your code.
+- **Understanding Existing Codebases**: Many libraries, frameworks, and open-source projects incorporate functional
+  programming concepts. By learning functional programming, you'll be better equipped to understand and work with these
+  codebases, making it easier to leverage their functionality or contribute to the projects.
+- **Preparation for Future Technologies**: Functional programming is gaining popularity across various programming
+  languages and ecosystems. By learning its principles, you'll be better prepared for future developments in the
+  programming landscape. Additionally, as multi-core and parallel processing become more prevalent, functional
+  programming's emphasis on immutability and lack of shared state makes it a suitable paradigm for writing concurrent
+  and distributed systems.
+- **Cognitive Flexibility**: Learning functional programming broadens your programming toolkit and enhances your ability
+  to approach problems from different angles. It develops your cognitive flexibility, enabling you to choose the most
+  appropriate paradigm for a given problem and adapt your coding style to different programming contexts.
 
 ## I need to do some side effects, what do I do?
 
