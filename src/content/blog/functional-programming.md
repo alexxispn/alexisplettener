@@ -4,22 +4,19 @@ pubDatetime: 2023-05-12T15:56:52.737Z
 title: Functional Programming
 postSlug: functional-programming
 featured: true
-ogImage: /assets/my-zsh.png
+ogImage: /assets/functional-programming.png
 tags:
-  - zsh
-  - terminal
-  - linux
-  - ubuntu
-  - shell
-  - powerlevel10k
-  - oh-my-zsh
+  - functional-programming
+  - programming-paradigm
+  - pure-functions
+  - declarative-programming
 description: I've been exploring functional programming recently and wanted to share some valuable insights and
   resources I've discovered.
 ---
 
 # Functional Programming
 
-![Functional Programming](/public/assets/functional-programming.png)
+![Functional Programming](/assets/functional-programming.png)
 
 ## Table of Contents
 
@@ -29,6 +26,7 @@ description: I've been exploring functional programming recently and wanted to s
 - [Why is Functional Programming useful to know?](#why-is-functional-programming-useful-to-know)
 - [Functional Programming Principles](#functional-programming-principles)
 - [I need to do some side effects, what do I do?](#i-need-to-do-some-side-effects-what-do-i-do)
+- [Can you guess which of these functions are pure?](#can-you-guess-which-of-these-functions-are-pure)
 
 ## What is Functional Programming?
 
@@ -166,3 +164,59 @@ const input = "some input";
 const color = calculateButtonColor(input);
 updateButtonColor(color);
 ```
+
+## Can you guess which of these functions are pure?
+
+```javascript
+const add1 = (a, b) => a + b;
+const add2 = (a, b) => {
+    const result = a + b;
+    return result;
+};
+const add3 = (a, b) => {
+    const result = a + b;
+    console.log(`${a} + ${b} = ${result}`);
+    return result;
+};
+
+const generateRandomNumber = () => Math.random();
+
+const checkGuess = (guess, secretNumber) => guess === secretNumber;
+
+const displayMessage = (message) => {
+    console.log(message);
+};
+
+const updateScore = (score, points) => score + points;
+
+const saveScore = (score) => {
+    // Saving score to external storage
+};
+
+const resetGame = () => {
+    // Resetting game state
+};
+
+const generateHint = (secretNumber) => `The secret number is between 1 and ${secretNumber}`;
+
+const getHighScore = () => {
+    // Retrieving high score from external storage
+};
+```
+
+<details>
+<summary>Solution</summary>
+- The first function (`add1`) is a pure function because it always returns the same output for the same input and has no side effects.
+- The second function (`add2`) is a pure function because it always returns the same output for the same input and has no side effects.
+- The third function (`add3`) is an impure function because it has a side effect of logging to the console.
+- The `generateRandomNumber` function is a non-pure function because it produces different outputs each time it is called.
+- The `checkGuess` function is a pure function because it compares the `guess` with the `secretNumber` and returns a boolean without any side effects.
+- The `displayMessage` function is a non-pure function because it involves a side effect of interacting with the user interface by displaying a message.
+- The `updateScore` function is a pure function because it takes the current `score` and `points` earned from the guess and returns the updated score without modifying external state or having side effects.
+- The `saveScore` function is a non-pure function because it involves a side effect of saving the score to an external storage.
+- The `resetGame` function is a non-pure function because it involves modifying the external state by resetting the game.
+- The `generateHint` function is a pure function because it generates a hint for the `secretNumber` and returns it without modifying external state or having side effects.
+- The `getHighScore` function is a non-pure function because it involves a side effect of retrieving the high score from an external storage.
+</details>
+
+
